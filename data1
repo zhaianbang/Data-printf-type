@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int a=1234;
+    printf("a=%d\n",a);    //a=1234
+    printf("a=%2d\n",a);   //a=1234    超过2位，按实际输出
+    printf("a=%6d\n",a);   //a=  1234  不足6位，右对齐
+    printf("a=%06d\n",a);  //a=001234  不足6位，前面补0
+    printf("a=%-6d\n",a);  //a=1234    '-'左对齐
+cin.get();
+return 0;
+}
